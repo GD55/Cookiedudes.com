@@ -1,0 +1,365 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CookieDudes</title>
+    <link rel="icon" type="image/png" href="./resources/Logo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body onwheel="myFunction(event)">
+    <div id="navigationBar">
+        <a onclick="changePage(1)" id="nav1">
+            <div>THINGS WE DO</div>
+        </a>
+        <a onclick="changePage(2)" id="nav2">
+            <div>GEARS WE USE</div>
+        </a>
+        <a id="centerLogoLink" onclick="changePage(0)">
+            <img id="centerLogo" src="./resources/LOGO0.png">
+        </a>
+        <a onclick="changePage(3)" id="nav3">
+            <div>JOIN THE TEAM</div>
+        </a>
+        <a onclick="changePage(4)" id="nav4">
+            <div>CONTACT US</div>
+        </a>
+    </div>
+    <div id="gifBackground" class="d-block d-lg-none">
+
+    </div>
+    <img id="companyLogo" src="./resources/logo/Logo-Animation.gif" alt="">
+    <div class="menuIcon d-block d-lg-none" onclick="menuIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div id="menu" class="d-none text-center">
+        <div id="homeMenu" onclick="changePage(0)">HOME</div>
+        <hr>
+        <div onclick="changePage(1)">THINGS WE DO</div>
+        <hr>
+        <div onclick="changePage(2)">GEARS WE USE</div>
+        <hr>
+        <div onclick="changePage(3)">JOIN THE TEAM</div>
+        <hr>
+        <div onclick="changePage(4)">CONTACT US</div>
+        <hr>
+    </div>
+    <div class="text-center container">
+        <h1 class="d-none">Cookie Dudes</h1>
+        <div id="home">
+            <div class="paraMain">
+                <div class="py-1">
+                    Hi,
+                </div>
+                <div class="py-1">
+                    We are CookieDudes. </div>
+                <div class="py-1">
+                    No, we don't bake biscuit. We add flavour to your work. </div>
+                <div class="py-1">
+                    We are a Video Production Company in Delhi. </div>
+                <div class="py-1">
+                    We produce original content for brands and artists. </div>
+                <div class="py-1">
+                    Hit us up if you wanna collaborate. </div>
+                <div class="py-1">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hi@cookiedudes.com" target="_blank">hi@cookiedudes.com</a>
+                </div>
+                <div class="links" id="ourWork">
+                    <a href="https://vimeo.com/cookiedudes" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="https://www.instagram.com/cookiedudes/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.behance.net/manavkwatra" target="_blank"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="row icons d-none d-lg-flex">
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.instagram.com/viidubai/" target="_blank">
+                        <img src="./resources/logo/VII.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.instagram.com/playboyclubjaipur/" target="_blank">
+                        <img src="./resources/logo/Playboy.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.instagram.com/kritids/?hl=en" target="_blank">
+                        <img src="./resources/logo/Kriti ds.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://coffic.com/" target="_blank">
+                        <img src="./resources/logo/Coffic.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://www.setwet.com/" target="_blank">
+                        <img id="setWet" src="./resources/logo/Set Wet.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-1">
+
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://sakshiurvashi.com/" target="_blank">
+                        <img src="./resources/logo/S&U.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="https://hqbe.in/" target="_blank">
+                        <img src="./resources/logo/HQBE.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://satthwa.com/" target="_blank">
+                        <img src="./resources/logo/Satthwa.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://www.biotique.com/" target="_blank">
+                        <img src="./resources/logo/biotique.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row mobIcon d-flex d-lg-none">
+                <div class="col-4">
+                    <a href="https://www.instagram.com/viidubai/" target="_blank">
+                        <img src="./resources/logo/VII.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.instagram.com/playboyclubjaipur/" target="_blank">
+                        <img src="./resources/logo/Playboy.png" alt="">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.instagram.com/kritids/?hl=en" target="_blank">
+                        <img src="./resources/logo/Kriti ds.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="https://coffic.com/" target="_blank">
+                        <img src="./resources/logo/Coffic.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.setwet.com/" target="_blank">
+                        <img src="./resources/logo/Set Wet.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="https://sakshiurvashi.com/" target="_blank">
+                        <img src="./resources/logo/S&U.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="https://hqbe.in/" target="_blank">
+                        <img src="./resources/logo/HQBE.png" alt="">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="https://satthwa.com/" target="_blank">
+                        <img src="./resources/logo/Satthwa.png" alt="">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a href="https://www.biotique.com/" target="_blank">
+                        <img src="./resources/logo/biotique.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="full px-lg-5" id="thingsWeDo">
+            <div class="spacer">
+
+            </div>
+            <div class="row py-lg-4 px-lg-3" id="Things">
+                <div class="col-lg-4">
+                    <a href="./video.html">
+                        <img src="./resources/work/Video&animation.jpg" alt="">
+                    </a>
+                    <p>Video & Animation</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./social.html">
+                        <img src="./resources/work/Social Media.jpg" alt="">
+                    </a>
+                    <p>Social Media Marketing</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./music.html">
+                        <img src="./resources/work/music&audio.jpg" alt="">
+                    </a>
+                    <p>Music & Audio</p>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-4">
+                    <a href="./graphic.html">
+                        <img src="./resources/work/graphic&design.jpg" alt="">
+                    </a>
+                    <p>Graphics & Design</p>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./tech.html">
+                        <img src="./resources/work/programming&tech.jpg" alt="">
+                    </a>
+                    <p>Programming & Tech</p>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+        </div>
+        <div class="full px-lg-5" id="gearsWeUse">
+            <div class="spacer">
+
+            </div>
+            <div class="row py-lg-3 px-lg-3" id="gears">
+                <div class="col-lg-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./resources/gears/Black Magic.jpg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="py-3">CAMERA</p>
+                                <p class="px-2">Blackmagic Design Pocket Cinema Camera 4K</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./resources/gears/Lense.JPG" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="py-3">LENSES</p>
+                                <p class="px-2">Wide range of full frame Canon EF lenses L series </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./resources/gears/Equipments.jpg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="py-3">EQUIPMENT</p>
+                                <p class="px-2">Zhiyun Crane 2 Gimbal <br> Manfrotto Tripods <br> Aputure Lights <br> Lens Filters etc..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2 px-4 px-lg-0 pt-lg-5" id="softwareLogo">
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/01_Adobe After Effects.png" alt="" title="Adobe After Effects">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/02_Premier Pro Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/03_Adobe Illustrator Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/04_Adobe Audition Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/05_Photoshop Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/06_Lightroom Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/Adobe Bridge Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/07_C4d Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/08_Fl Studio Logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/nodejs-logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/Python-logo.png" alt="">
+                </div>
+                <div class="col-4 col-lg-1 py-1">
+                    <img src="./resources/logo/mysql.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="full px-5" id="joinUs">
+            <div class="spacer">
+
+            </div>
+            <div class="pt-3">
+                <div class="parajoin">
+                    <div class="py-1">
+                        We are always looking out for creative people just like you!
+                    </div>
+                    <div class="py-1">
+                        So just hit us hard with your portfolio </div>
+                    <div class="py-1">
+                        At, </div>
+                    <div class="py-1">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hi@cookiedudes.com&su=Portfolio || *Your Full Name*" target="_blank">hi@cookiedudes.com</a>
+                    </div>
+                    <div class="py-1">
+                        **MAKE SURE TO ADD SUBJECT “Portfolio || Your Full Name” </div>
+                </div>
+            </div>
+        </div>
+        <div class="full px-5" id="contactUs">
+            <div class="spacer">
+
+            </div>
+            <div class="py-3">
+                <div class="paraContact">
+                    <div class="py-1">
+                        Delhi,India
+                    </div>
+                    <div class="py-2"></div>
+                    <div class="py-1">
+                        Ph : 011-7141-2635
+                    </div>
+                    <div class="py-2"></div>
+                    <div class="py-1">
+                        Reach us at
+                    </div>
+                    <div class="py-1">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hi@cookiedudes.com" target="_blank">hi@cookiedudes.com</a>
+                    </div>
+                </div>
+                <iframe src="http://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448183.73907005717!2d76.81307299667618!3d28.646677259922765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1579857853464!5m2!1sen!2sin"
+                    class="map" width="100%" height="300" frameborder="0" allowfullscreen=""></iframe>
+                <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14003.2357210842!2d77.29797765!3d28.665439199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb71b2ad61b3%3A0xeadd27fc4cdba454!2sA%20C%20N%20Hospital!5e0!3m2!1sen!2sin!4v1578036315840!5m2!1sen!2sin"
+                    class="map" width="100%" height="300" frameborder="0" allowfullscreen=""></iframe> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+
+</html>
